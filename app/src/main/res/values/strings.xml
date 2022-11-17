@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Guess The Number</string>
+    <string name="easyLevel">Easy level</string>
+    <string name="mediumLevel">Medium level</string>
+    <string name="hardLevel">Hard level</string>
+    <string name="gameDifficult">Choose game difficult</string>
+    <string name="randRange">Range of randed numbers: </string>
+    <string name="beforeGuess">Guess my number by typing it</string>
+    <string name="EtHint">Enter your number</string>
+    <string name="btnGuess">Check number</string>
+
+    <string name="congratsTitle">Congratulations!</string>
+    <string name="congratsMessage">You guess my number! What do you want to do now?</string>
+    <string name="congratsPositive">Play again</string>
+    <string name="congratsNeutral">Go to menu</string>
+
+    <string name="loseTitle">Sorry!</string>
+    <string name="loseMessage">No this time! But don\'t give up and try again ;)</string>
+    <string name="losePositive">Play again</string>
+    <string name="loseNegative">Go to menu</string>
+
+    <string name="empty">Field shouldn\'t be empty</string>
+</resources>

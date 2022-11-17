@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Guess The Number</string>
+    <string name="easyLevel">Łatwy poziom</string>
+    <string name="mediumLevel">Średni poziom</string>
+    <string name="hardLevel">Trudny poziom</string>
+    <string name="gameDifficult">Wybierz poziom trudności</string>
+    <string name="randRange">Zakres wylosowanych liczb: </string>
+    <string name="beforeGuess">Zgadnij liczbę poprzez jej wpisanie</string>
+    <string name="EtHint">Wpisz liczbę</string>
+    <string name="btnGuess">Sprawdź</string>
+
+    <string name="congratsTitle">Gratulacje!</string>
+    <string name="congratsMessage">Odgadłeś moją liczbę! Co chciałbyś teraz zrobić?</string>
+    <string name="congratsPositive">Zagraj ponownie</string>
+    <string name="congratsNeutral">Idź do menu</string>
+
+    <string name="loseTitle">Przykro mi!</string>
+    <string name="loseMessage">Tym razem niestety nie odgadłeś, ale nie poddawaj się ;)</string>
+    <string name="losePositive">Zagraj ponownie</string>
+    <string name="loseNegative">Idź do menu</string>
+
+    <string name="empty">Pole nie może być puste</string>
+</resources>
