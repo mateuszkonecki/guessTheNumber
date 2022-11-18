@@ -58,6 +58,7 @@ public class EasyGuessActivity extends AppCompatActivity {
                                     @Override
                                     public void onClick(DialogInterface dialogInterface, int i) {
                                         finish();
+                                        overridePendingTransition(R.anim.left_in, R.anim.right_out);
                                     }
                                 })
                                 .show();
@@ -90,6 +91,7 @@ public class EasyGuessActivity extends AppCompatActivity {
                                     @Override
                                     public void onClick(DialogInterface dialogInterface, int i) {
                                         finish();
+                                        overridePendingTransition(R.anim.left_in, R.anim.right_out);
                                     }
                                 })
                                 .show();
@@ -106,5 +108,27 @@ public class EasyGuessActivity extends AppCompatActivity {
         binding.heartRight.setImageResource(R.drawable.ic_favorite_24);
         wylosowana = random.nextInt(15)+1;
         binding.numberET.setText("");
+    }
+
+    @Override
+    public void onBackPressed() {
+        new MaterialAlertDialogBuilder(EasyGuessActivity.this)
+                .setTitle(getResources().getString(R.string.exitTitle))
+                .setMessage(getResources().getString(R.string.exitMessage))
+                .setCancelable(false)
+                .setPositiveButton(getResources().getString(R.string.exitPositive), new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+                        finish();
+                        overridePendingTransition(R.anim.left_in, R.anim.right_out);
+                    }
+                })
+                .setNegativeButton(getResources().getString(R.string.exitNegative), new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+
+                    }
+                })
+                .show();
     }
 }

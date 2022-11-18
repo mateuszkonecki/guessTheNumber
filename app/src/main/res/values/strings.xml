@@ -1,8 +1,14 @@
 <resources>
     <string name="app_name">Guess The Number</string>
+
     <string name="easyLevel">Easy level</string>
     <string name="mediumLevel">Medium level</string>
     <string name="hardLevel">Hard level</string>
+
+    <string name="easyLevelForLabel">Easy</string>
+    <string name="mediumLevelForLabel">Medium</string>
+    <string name="hardLevelForLabel">Hard</string>
+
     <string name="gameDifficult">Choose game difficult</string>
     <string name="randRange">Range of randed numbers: </string>
     <string name="beforeGuess">Guess my number by typing it</string>
@@ -20,4 +26,14 @@
     <string name="loseNegative">Go to menu</string>
 
     <string name="empty">Field shouldn\'t be empty</string>
+
+    <string name="exitTitle">Exit!</string>
+    <string name="exitMessage">Are you sure to exit this level?</string>
+    <string name="exitPositive">Yes, of course</string>
+    <string name="exitNegative">No, I made a mistake</string>
+
+    <string name="exitAppTitle">Exit!</string>
+    <string name="exitAppMessage">Are you sure to exit the application?</string>
+    <string name="exitAppPositive">Yes, of course</string>
+    <string name="exitAppNegative">No, I made a mistake</string>
 </resources>

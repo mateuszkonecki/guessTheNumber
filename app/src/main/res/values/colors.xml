@@ -10,8 +10,8 @@
 
     <!--  MyColors  -->
 
-    <color name="startLaunchColor">#F0E68C</color>
+    <color name="startLaunchColor">#138585</color>
     <color name="endLaunchColor">#FFA07A</color>
-    <color name="appNameColor">#B22222</color>
+    <color name="appNameColor">#FFA07A</color>
     <color name="startButtonColor">#9400D3</color>
 </resources>

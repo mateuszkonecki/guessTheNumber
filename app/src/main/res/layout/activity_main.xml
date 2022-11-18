@@ -7,34 +7,57 @@
     android:background="@drawable/launch_background"
     tools:context=".MainActivity">
 
+    <ImageView
+        android:id="@+id/exitBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/ic_exit_to_app_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/infoBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/ic_info_24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <TextView
         android:id="@+id/textView"
-        android:layout_width="0dp"
+        android:layout_width="370dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
-        android:text="@string/app_name"
+        android:layout_marginBottom="10dp"
         android:fontFamily="@font/rubik_bubbles_regular"
+        android:letterSpacing="0.2"
+        android:text="@string/app_name"
         android:textAlignment="center"
         android:textColor="@color/appNameColor"
         android:textSize="26sp"
-        android:letterSpacing="0.2"
+        app:layout_constraintBottom_toTopOf="@+id/setDifficulty"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/exitBtn"
+        app:layout_constraintVertical_chainStyle="packed"
         app:layout_constraintWidth_percent="0.9" />
 
     <TextView
         android:id="@+id/setDifficulty"
-        android:layout_width="0dp"
+        android:layout_width="411dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:text="@string/gameDifficult"
         android:letterSpacing="0.265"
+        android:text="@string/gameDifficult"
         android:textAlignment="center"
         android:textColor="#3F4750"
         android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/easyLevelBtn"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView"
         app:layout_constraintWidth_percent="1" />
@@ -42,7 +65,7 @@
     <Button
         android:id="@+id/easyLevelBtn"
         style="@style/Widget.MaterialComponents.Button"
-        android:layout_width="206dp"
+        android:layout_width="0dp"
         android:layout_height="70dp"
         android:layout_marginBottom="50dp"
         android:drawableEnd="@drawable/ic_play_arrow_24"
@@ -53,12 +76,12 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView"
         app:layout_constraintVertical_chainStyle="packed"
-        app:layout_constraintWidth_percent="0.5" />
+        app:layout_constraintWidth_percent="0.6" />
 
     <Button
         android:id="@+id/mediumLevelBtn"
         style="@style/Widget.MaterialComponents.Button"
-        android:layout_width="206dp"
+        android:layout_width="0dp"
         android:layout_height="70dp"
         android:layout_marginBottom="50dp"
         android:drawableEnd="@drawable/ic_play_arrow_24"
@@ -68,20 +91,19 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/easyLevelBtn"
-        app:layout_constraintWidth_percent="0.5" />
+        app:layout_constraintWidth_percent="0.6" />
 
     <Button
         android:id="@+id/hardLevelBtn"
         style="@style/Widget.MaterialComponents.Button"
-        android:layout_width="206dp"
+        android:layout_width="0dp"
         android:layout_height="70dp"
         android:drawableEnd="@drawable/ic_play_arrow_24"
         android:text="@string/hardLevel"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/mediumLevelBtn"
-        app:layout_constraintWidth_percent="0.5" />
+        app:layout_constraintWidth_percent="0.6" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,9 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Guess The Number</string>
+
     <string name="easyLevel">Łatwy poziom</string>
     <string name="mediumLevel">Średni poziom</string>
     <string name="hardLevel">Trudny poziom</string>
+
+    <string name="easyLevelForLabel">Łatwy</string>
+    <string name="mediumLevelForLabel">Średni</string>
+    <string name="hardLevelForLabel">Trudny</string>
+
     <string name="gameDifficult">Wybierz poziom trudności</string>
     <string name="randRange">Zakres wylosowanych liczb: </string>
     <string name="beforeGuess">Zgadnij liczbę poprzez jej wpisanie</string>
@@ -21,4 +27,14 @@
     <string name="loseNegative">Idź do menu</string>
 
     <string name="empty">Pole nie może być puste</string>
+
+    <string name="exitTitle">Wyjście</string>
+    <string name="exitMessage">Czy na pewno chcesz opuścić ten poziom?</string>
+    <string name="exitPositive">Zgadza się</string>
+    <string name="exitNegative">Nie, pomyliłem się</string>
+
+    <string name="exitAppTitle">Wyjście</string>
+    <string name="exitAppMessage">Czy na pewno chcesz opuścić aplikację?</string>
+    <string name="exitAppPositive">Tak, chcę</string>
+    <string name="exitAppNegative">Nie, pomyliłem się</string>
 </resources>
