@@ -36,4 +36,12 @@
     <string name="exitAppMessage">Are you sure to exit the application?</string>
     <string name="exitAppPositive">Yes, of course</string>
     <string name="exitAppNegative">No, I made a mistake</string>
+
+    <string name="myNumberTV">randed number</string>
+    <string name="incorrectFormat">Incorrect format of number</string>
+
+    <string name="lastScores">Your recent scores</string>
+
+    <string name="noData">No data</string>
+    <string name="tryCounter">Count of recent tries: </string>
 </resources>

@@ -37,4 +37,12 @@
     <string name="exitAppMessage">Czy na pewno chcesz opuścić aplikację?</string>
     <string name="exitAppPositive">Tak, chcę</string>
     <string name="exitAppNegative">Nie, pomyliłem się</string>
+
+    <string name="myNumberTV">wylosowana liczba</string>
+    <string name="incorrectFormat">Niepoprawny format liczby</string>
+
+    <string name="lastScores">Twoje ostatnie wyniki</string>
+
+    <string name="noData">Brak danych</string>
+    <string name="tryCounter">Ilość ostatnich prób: </string>
 </resources>

@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.media.Image;
 import android.os.Bundle;
 import android.view.View;
@@ -11,25 +12,20 @@ import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 
+import com.example.guessthenumber.databinding.ActivityMainBinding;
 import com.google.android.material.dialog.MaterialAlertDialogBuilder;
 
 public class MainActivity extends AppCompatActivity {
 
-    private Button easyLevelBtn, mediumLevelBtn, hardLevelBtn;
-    private ImageView exitBtn, infoBtn;
+    private ActivityMainBinding binding;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        binding = ActivityMainBinding.inflate(getLayoutInflater());
+        setContentView(binding.getRoot());
 
-        easyLevelBtn = findViewById(R.id.easyLevelBtn);
-        mediumLevelBtn = findViewById(R.id.mediumLevelBtn);
-        hardLevelBtn = findViewById(R.id.hardLevelBtn);
-        exitBtn = findViewById(R.id.exitBtn);
-        infoBtn = findViewById(R.id.infoBtn);
-
-        easyLevelBtn.setOnClickListener(new View.OnClickListener() {
+        binding.easyLevelBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, EasyGuessActivity.class);
@@ -38,15 +34,16 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        mediumLevelBtn.setOnClickListener(new View.OnClickListener() {
+        binding.mediumLevelBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, MediumGuessActivity.class);
                 startActivity(intent);
+                overridePendingTransition(R.anim.right_in, R.anim.left_out);
             }
         });
 
-        hardLevelBtn.setOnClickListener(new View.OnClickListener() {
+        binding.hardLevelBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, HardGuessActivity.class);
@@ -54,7 +51,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        exitBtn.setOnClickListener(new View.OnClickListener() {
+        binding.exitBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 new MaterialAlertDialogBuilder(MainActivity.this)
@@ -77,12 +74,21 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        infoBtn.setOnClickListener(new View.OnClickListener() {
+        binding.infoBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, GameInfoActivity.class);
                 startActivity(intent);
                 overridePendingTransition(R.anim.left_in, R.anim.right_out);
+            }
+        });
+
+        binding.scores.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, ScoresActivity.class);
+                startActivity(intent);
+                overridePendingTransition(R.anim.top_in, R.anim.bottom_out);
             }
         });
     }

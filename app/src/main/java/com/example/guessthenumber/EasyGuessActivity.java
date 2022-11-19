@@ -41,6 +41,8 @@ public class EasyGuessActivity extends AppCompatActivity {
 
                 if(userInput.isEmpty()) {
                     binding.numberET.setError(getResources().getString(R.string.empty));
+                } else if(userInput.contains(".")) {
+                    binding.numberET.setError(getResources().getString(R.string.incorrectFormat));
                 } else {
                     int userInputInt = Integer.parseInt(userInput);
                     if(wylosowana == userInputInt) {
