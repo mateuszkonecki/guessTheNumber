@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/launch_background">
+
+    <ImageView
+        android:id="@+id/exitBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/ic_exit_to_app_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/infoBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/ic_info_24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="370dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/rubik_bubbles_regular"
+        android:letterSpacing="0.2"
+        android:text="@string/app_name"
+        android:textAlignment="center"
+        android:textColor="@color/appNameColor"
+        android:textSize="26sp"
+        app:layout_constraintEnd_toStartOf="@+id/exitBtn"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toEndOf="@+id/infoBtn"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.9" />
+
+    <TextView
+        android:id="@+id/setDifficulty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:letterSpacing="0.265"
+        android:text="@string/gameDifficult"
+        android:textAlignment="center"
+        android:textColor="#3F4750"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintWidth_percent="1" />
+
+    <Button
+        android:id="@+id/easyLevelBtn"
+        style="@style/Widget.MaterialComponents.Button"
+        android:layout_width="247dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="16dp"
+        android:drawableEnd="@drawable/ic_play_arrow_24"
+        android:text="@string/easyLevel"
+        app:layout_constraintBottom_toTopOf="@+id/hardLevelBtn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/setDifficulty"
+        app:layout_constraintVertical_bias="0.653"
+        app:layout_constraintWidth_percent="0.6" />
+
+    <Button
+        android:id="@+id/mediumLevelBtn"
+        style="@style/Widget.MaterialComponents.Button"
+        android:layout_width="247dp"
+        android:layout_height="70dp"
+        android:layout_marginEnd="16dp"
+        android:drawableEnd="@drawable/ic_play_arrow_24"
+        android:text="@string/mediumLevel"
+        app:layout_constraintBottom_toTopOf="@+id/hardLevelBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/setDifficulty"
+        app:layout_constraintVertical_bias="0.653"
+        app:layout_constraintWidth_percent="0.6" />
+
+    <Button
+        android:id="@+id/hardLevelBtn"
+        style="@style/Widget.MaterialComponents.Button"
+        android:layout_width="247dp"
+        android:layout_height="70dp"
+        android:drawableEnd="@drawable/ic_play_arrow_24"
+        android:text="@string/hardLevel"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scores"
+        app:layout_constraintWidth_percent="0.6" />
+
+    <ImageView
+        android:id="@+id/scores"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="92dp"
+        android:src="@drawable/ic_emoji_events_24"
+        app:layout_constraintEnd_toStartOf="@+id/mediumLevelBtn"
+        app:layout_constraintStart_toEndOf="@+id/easyLevelBtn"
+        app:layout_constraintTop_toBottomOf="@+id/setDifficulty" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
