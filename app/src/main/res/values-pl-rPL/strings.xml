@@ -48,6 +48,6 @@
     <string name="infoHello">Informacje o grze</string>
     <string name="gameDescription1">Gra polega na odgadnięciu wylosowanej przez komputer liczby z zakresu podanego w lewym górnym rogu.</string>
     <string name="gameDescription2">Podczas gry na poziomie łatwym, dostępne są 3 życia. Jeśli życia nie są już dostępne, zostanie wyświetlony odpowiedni komunikat.</string>
-    <string name="gameDescription3">Zarówno poziomy średni, jak i trudny, wyświetlają informacje o wylosowanej liczbie nad polem wprowadzania, po podaniu swojej liczby. Po odgadnięciu liczby i przejściu do menu, liczba podjętych prób zostanie zapisana jako ostatni wynik.</string>
+    <string name="gameDescription3">Zarówno poziomy średni, jak i trudny, wyświetlają informacje o wylosowanej liczbie nad polem wprowadzania, po podaniu swojej liczby. Po odgadnięciu i przejściu do menu, ilość podjętych prób zostanie zapisana jako ostatni wynik.</string>
     <string name="gameDescription4">Aby wyjść z danej aktywności, wystarczy nacisnąć przycisk „Wstecz”.</string>
 </resources>
