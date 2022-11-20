@@ -10,7 +10,7 @@
     <string name="hardLevelForLabel">Hard</string>
 
     <string name="gameDifficult">Choose game difficult</string>
-    <string name="randRange">Range of randed numbers: </string>
+    <string name="randRange">Range of randed numbers</string>
     <string name="beforeGuess">Guess my number by typing it</string>
     <string name="EtHint">Enter your number</string>
     <string name="btnGuess">Check number</string>
@@ -42,6 +42,11 @@
 
     <string name="lastScores">Your recent scores</string>
 
-    <string name="noData">No data</string>
     <string name="tryCounter">Count of recent tries: </string>
+
+    <string name="infoHello">Information about game</string>
+    <string name="gameDescription1">The game is based on the task of guessing a number rand by the computer from the range given in the upper left corner. </string>
+    <string name="gameDescription2">When playing on easy level, 3 lives are available. If lives are no longer available, an appropriate message will be displayed.</string>
+    <string name="gameDescription3">Both medium and hard levels display information about the rand number above the input field, after typing own number. After guessing the number and going to the menu, the number of taken tries will be saved as the last score.</string>
+    <string name="gameDescription4">To exit a given activity, just press the "Back" button.</string>
 </resources>

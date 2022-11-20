@@ -89,14 +89,14 @@
                     android:id="@+id/lastScoreMedium"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:letterSpacing="0.2"
-                    android:layout_marginStart="20dp"
                     android:layout_marginBottom="10dp"
                     android:textColor="@color/white"
+                    android:letterSpacing="0.3"
+                    android:layout_marginStart="20dp"
                     android:layout_gravity="center"
                     android:textSize="15sp"
                     android:textStyle="bold"
-                    tools:text="5" />
+                    tools:text="----" />
 
             </LinearLayout>
 
@@ -147,14 +147,14 @@
                     android:id="@+id/lastScoreHard"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:letterSpacing="0.2"
                     android:layout_marginStart="20dp"
                     android:layout_marginBottom="10dp"
                     android:textColor="@color/white"
                     android:layout_gravity="center"
+                    android:letterSpacing="0.3"
                     android:textSize="15sp"
                     android:textStyle="bold"
-                    tools:text="5" />
+                    tools:text="----" />
 
             </LinearLayout>
 

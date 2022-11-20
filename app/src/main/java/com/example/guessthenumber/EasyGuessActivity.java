@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -32,7 +33,6 @@ public class EasyGuessActivity extends AppCompatActivity {
         setContentView(binding.getRoot());
 
         playAgain();
-        binding.numbersRange.setText("1-15");
 
         binding.checkNumberBtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -50,6 +50,7 @@ public class EasyGuessActivity extends AppCompatActivity {
                                 .setTitle(getResources().getString(R.string.congratsTitle))
                                 .setMessage(getResources().getString(R.string.congratsMessage))
                                 .setCancelable(false)
+                                .setBackground(getDrawable(R.drawable.material_background))
                                 .setPositiveButton(getResources().getString(R.string.congratsPositive), new DialogInterface.OnClickListener() {
                                     @Override
                                     public void onClick(DialogInterface dialogInterface, int i) {
@@ -83,13 +84,14 @@ public class EasyGuessActivity extends AppCompatActivity {
                                 .setTitle(getResources().getString(R.string.loseTitle))
                                 .setMessage(getResources().getString(R.string.loseMessage))
                                 .setCancelable(false)
+                                .setBackground(getDrawable(R.drawable.material_background))
                                 .setPositiveButton(getResources().getString(R.string.losePositive), new DialogInterface.OnClickListener() {
                                     @Override
                                     public void onClick(DialogInterface dialogInterface, int i) {
                                         playAgain();
                                     }
                                 })
-                                .setNegativeButton(getResources().getString(R.string.loseNegative), new DialogInterface.OnClickListener() {
+                                .setNeutralButton(getResources().getString(R.string.loseNegative), new DialogInterface.OnClickListener() {
                                     @Override
                                     public void onClick(DialogInterface dialogInterface, int i) {
                                         finish();
@@ -109,6 +111,7 @@ public class EasyGuessActivity extends AppCompatActivity {
         binding.heartMiddle.setImageResource(R.drawable.ic_favorite_24);
         binding.heartRight.setImageResource(R.drawable.ic_favorite_24);
         wylosowana = random.nextInt(15)+1;
+        binding.numbersRange.setText("1 --> 15");
         binding.numberET.setText("");
     }
 
@@ -117,7 +120,8 @@ public class EasyGuessActivity extends AppCompatActivity {
         new MaterialAlertDialogBuilder(EasyGuessActivity.this)
                 .setTitle(getResources().getString(R.string.exitTitle))
                 .setMessage(getResources().getString(R.string.exitMessage))
-                .setCancelable(false)
+                .setCancelable(false).setIcon(getDrawable(R.drawable.ic_warning_24))
+                .setBackground(getDrawable(R.drawable.material_background))
                 .setPositiveButton(getResources().getString(R.string.exitPositive), new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
@@ -125,7 +129,7 @@ public class EasyGuessActivity extends AppCompatActivity {
                         overridePendingTransition(R.anim.left_in, R.anim.right_out);
                     }
                 })
-                .setNegativeButton(getResources().getString(R.string.exitNegative), new DialogInterface.OnClickListener() {
+                .setNeutralButton(getResources().getString(R.string.exitNegative), new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
 

@@ -20,7 +20,10 @@ public class ScoresActivity extends AppCompatActivity {
         setContentView(binding.getRoot());
 
         loadMediumData();
+        loadHardData();
         binding.lastScoreMedium.setText(mediumScore);
+        binding.lastScoreHard.setText(hardScore);
+
     }
 
     @Override
@@ -31,6 +34,11 @@ public class ScoresActivity extends AppCompatActivity {
 
     private void loadMediumData() {
         SharedPreferences sharedPreferences = getSharedPreferences(MediumGuessActivity.SHARED_PREF, MODE_PRIVATE);
-        mediumScore = sharedPreferences.getString(MediumGuessActivity.SHARED_PREF_KEY, getResources().getString(R.string.noData));
+        mediumScore = sharedPreferences.getString(MediumGuessActivity.SHARED_PREF_KEY, "----");
+    }
+
+    private void loadHardData() {
+        SharedPreferences sharedPreferences = getSharedPreferences(HardGuessActivity.SHARED_PREF, MODE_PRIVATE);
+        hardScore = sharedPreferences.getString(HardGuessActivity.SHARED_PREF_KEY, "----");
     }
 }

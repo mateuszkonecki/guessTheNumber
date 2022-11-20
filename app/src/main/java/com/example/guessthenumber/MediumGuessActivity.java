@@ -74,6 +74,7 @@ public class MediumGuessActivity extends AppCompatActivity {
                                 .setTitle(getResources().getString(R.string.congratsTitle))
                                 .setMessage(getResources().getString(R.string.congratsMessage))
                                 .setCancelable(false)
+                                .setBackground(getDrawable(R.drawable.material_background))
                                 .setPositiveButton(getResources().getString(R.string.congratsPositive), new DialogInterface.OnClickListener() {
                                     @Override
                                     public void onClick(DialogInterface dialogInterface, int i) {
@@ -101,7 +102,7 @@ public class MediumGuessActivity extends AppCompatActivity {
         binding.randedNumber.setVisibility(View.INVISIBLE);
         binding.userNumberTV.setVisibility(View.INVISIBLE);
         wylosowana = random.nextInt(75)+1;
-        binding.numbersRange.setText("1-" + String.valueOf(wylosowana));
+        binding.numbersRange.setText("1 --> 75");
         binding.numberET.setText("");
     }
 
@@ -111,6 +112,8 @@ public class MediumGuessActivity extends AppCompatActivity {
                 .setTitle(getResources().getString(R.string.exitTitle))
                 .setMessage(getResources().getString(R.string.exitMessage))
                 .setCancelable(false)
+                .setIcon(getDrawable(R.drawable.ic_warning_24))
+                .setBackground(getDrawable(R.drawable.material_background))
                 .setPositiveButton(getResources().getString(R.string.exitPositive), new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
@@ -118,7 +121,7 @@ public class MediumGuessActivity extends AppCompatActivity {
                         overridePendingTransition(R.anim.left_in, R.anim.right_out);
                     }
                 })
-                .setNegativeButton(getResources().getString(R.string.exitNegative), new DialogInterface.OnClickListener() {
+                .setNeutralButton(getResources().getString(R.string.exitNegative), new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
 

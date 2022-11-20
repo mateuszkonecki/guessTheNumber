@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.graphics.Color;
 import android.media.Image;
 import android.os.Bundle;
 import android.view.View;
@@ -48,6 +49,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, HardGuessActivity.class);
                 startActivity(intent);
+                overridePendingTransition(R.anim.right_in, R.anim.left_out);
             }
         });
 
@@ -58,6 +60,8 @@ public class MainActivity extends AppCompatActivity {
                         .setTitle(getResources().getString(R.string.exitAppTitle))
                         .setMessage(getResources().getString(R.string.exitAppMessage))
                         .setCancelable(false)
+                        .setBackground(getResources().getDrawable(R.drawable.main_material_background))
+                        .setIcon(getDrawable(R.drawable.ic_warning_24))
                         .setPositiveButton(getResources().getString(R.string.exitAppPositive), new DialogInterface.OnClickListener() {
                             @Override
                             public void onClick(DialogInterface dialogInterface, int i) {
@@ -99,6 +103,8 @@ public class MainActivity extends AppCompatActivity {
                 .setTitle(getResources().getString(R.string.exitAppTitle))
                 .setMessage(getResources().getString(R.string.exitAppMessage))
                 .setCancelable(false)
+                .setBackground(getResources().getDrawable(R.drawable.main_material_background))
+                .setIcon(getDrawable(R.drawable.ic_warning_24))
                 .setPositiveButton(getResources().getString(R.string.exitAppPositive), new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {

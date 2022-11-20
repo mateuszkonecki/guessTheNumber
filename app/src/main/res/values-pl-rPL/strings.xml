@@ -11,7 +11,7 @@
     <string name="hardLevelForLabel">Trudny</string>
 
     <string name="gameDifficult">Wybierz poziom trudności</string>
-    <string name="randRange">Zakres wylosowanych liczb: </string>
+    <string name="randRange">Zakres wylosowanych liczb</string>
     <string name="beforeGuess">Zgadnij liczbę poprzez jej wpisanie</string>
     <string name="EtHint">Wpisz liczbę</string>
     <string name="btnGuess">Sprawdź</string>
@@ -43,6 +43,11 @@
 
     <string name="lastScores">Twoje ostatnie wyniki</string>
 
-    <string name="noData">Brak danych</string>
     <string name="tryCounter">Ilość ostatnich prób: </string>
+
+    <string name="infoHello">Informacje o grze</string>
+    <string name="gameDescription1">Gra polega na odgadnięciu wylosowanej przez komputer liczby z zakresu podanego w lewym górnym rogu.</string>
+    <string name="gameDescription2">Podczas gry na poziomie łatwym, dostępne są 3 życia. Jeśli życia nie są już dostępne, zostanie wyświetlony odpowiedni komunikat.</string>
+    <string name="gameDescription3">Zarówno poziomy średni, jak i trudny, wyświetlają informacje o wylosowanej liczbie nad polem wprowadzania, po podaniu swojej liczby. Po odgadnięciu liczby i przejściu do menu, liczba podjętych prób zostanie zapisana jako ostatni wynik.</string>
+    <string name="gameDescription4">Aby wyjść z danej aktywności, wystarczy nacisnąć przycisk „Wstecz”.</string>
 </resources>
