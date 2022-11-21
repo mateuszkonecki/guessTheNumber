@@ -46,16 +46,13 @@
     <string name="tryCounter">Ilość ostatnich prób: </string>
 
     <string name="infoHello">Informacje o grze</string>
-    <string name="gameDescription1">Gra polega na odgadnięciu wylosowanej przez komputer liczby z zakresu podanego w lewym górnym rogu.</string>
-    <string name="gameDescription2">Podczas gry na poziomie łatwym, dostępne są 3 życia. Jeśli życia nie są już dostępne, zostanie wyświetlony odpowiedni komunikat.</string>
-    <string name="gameDescription3">Zarówno poziomy średni, jak i trudny, wyświetlają informacje o wylosowanej liczbie nad polem wprowadzania, po podaniu swojej liczby. Po odgadnięciu i przejściu do menu, ilość podjętych prób zostanie zapisana jako ostatni wynik.</string>
-    <string name="gameDescription4">Aby wyjść z danej aktywności, wystarczy nacisnąć przycisk „Wstecz”.</string>
+    <string name="gameDescription1">Gra opiera się na zadaniu odgadnięcia liczby wylosowanej przez komputer, która znajduje się w zakresie podanym w lewym górnym rogu ekranu.</string>
+    <string name="gameDescription2">Podczas rozgrywki na najłatwiejszym poziomie, dostępne są 3 życia. Po wykorzystaniu wszystkich szans, zostanie wyświetlony odpowiedni komunikat.</string>
+    <string name="gameDescription3">Na poziomach średnim i trudnym rozgrywka jest oparta na stosowaniu się do wskazówek wyświetlanych nad polem wprowadzania. Po zakończeniu gry na danym poziomie i wyjściu do menu, w ostatnich wynikach zostanie zapisana liczba podjętych prób.</string>
 
-    <string name="horizontalGameDescription">Gra polega na odgadnięciu wylosowanej przez komputer liczby z zakresu podanego w lewym górnym rogu.
+    <string name="horizontalGameDescription">Gra opiera się na zadaniu odgadnięcia liczby wylosowanej przez komputer, która znajduje się w zakresie podanym w lewym górnym rogu ekranu.
 
-Podczas gry na poziomie łatwym, dostępne są 3 życia. Jeśli życia nie są już dostępne, zostanie wyświetlony odpowiedni komunikat
+Podczas rozgrywki na najłatwiejszym poziomie, dostępne są 3 życia. Po wykorzystaniu wszystkich szans, zostanie wyświetlony odpowiedni komunikat.
 
-Zarówno poziomy średni, jak i trudny, wyświetlają informacje o wylosowanej liczbie nad polem wprowadzania, po podaniu swojej liczby. Po odgadnięciu i przejściu do menu, ilość podjętych prób zostanie zapisana jako ostatni wynik.
-
-Aby wyjść z danej aktywności, wystarczy nacisnąć przycisk „Wstecz”.</string>
+Na poziomach średnim i trudnym rozgrywka jest oparta na stosowaniu się do wskazówek wyświetlanych nad polem wprowadzania. Po zakończeniu gry na danym poziomie i wyjściu do menu, w ostatnich wynikach zostanie zapisana liczba podjętych prób.</string>
 </resources>

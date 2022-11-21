@@ -45,16 +45,13 @@
     <string name="tryCounter">Count of recent tries: </string>
 
     <string name="infoHello">Information about game</string>
-    <string name="gameDescription1">The game is based on the task of guessing a number rand by the computer from the range given in the upper left corner. </string>
-    <string name="gameDescription2">When playing on easy level, 3 lives are available. If lives are no longer available, an appropriate message will be displayed.</string>
-    <string name="gameDescription3">Both medium and hard levels display information about the rand number above the input field, after typing own number. After guessing the number and going to the menu, the amount of taken tries will be saved as the last score.</string>
-    <string name="gameDescription4">To exit a given activity, just press the "Back" button.</string>
+    <string name="gameDescription1">The game is based on the task of guessing a number drawn by the computer, which is within the range given in the upper left corner of the screen.</string>
+    <string name="gameDescription2">When playing on the easiest level, 3 lives are available. After using all the chances, an appropriate message will be displayed.</string>
+    <string name="gameDescription3">On medium and hard levels, gameplay is based on following the instructions above the input field. When you finish playing a level and exit to the menu, the number of attempts made will be saved in the last results.</string>
 
-    <string name="horizontalGameDescription">The game is based on the task of guessing a number rand by the computer from the range given in the upper left corner.
+    <string name="horizontalGameDescription">The game is based on the task of guessing a number drawn by the computer, which is within the range given in the upper left corner of the screen.
 
-When playing on easy level, 3 lives are available. If lives are no longer available, an appropriate message will be displayed.
+When playing on the easiest level, 3 lives are available. After using all the chances, an appropriate message will be displayed.
 
-Both medium and hard levels display information about the rand number above the input field, after typing own number. After guessing the number and going to the menu, the amount of taken tries will be saved as the last score.
-
-To exit a given activity, just press the "Back" button. </string>
+On medium and hard levels, gameplay is based on following the instructions above the input field. When you finish playing a level and exit to the menu, the number of attempts made will be saved in the last results.</string>
 </resources>
