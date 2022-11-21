@@ -46,12 +46,14 @@
 
     <string name="infoHello">Information about game</string>
     <string name="gameDescription1">The game is based on the task of guessing a number drawn by the computer, which is within the range given in the upper left corner of the screen.</string>
-    <string name="gameDescription2">When playing on the easiest level, 3 lives are available. After using all the chances, an appropriate message will be displayed.</string>
-    <string name="gameDescription3">On medium and hard levels, gameplay is based on following the instructions above the input field. When you finish playing a level and exit to the menu, the number of attempts made will be saved in the last results.</string>
+    <string name="gameDescription2">When playing on the easiest level, 3 lives are available. After using all the chances, an appropriate message will be displayed. At this level, the number of tries made is not saving.</string>
+    <string name="gameDescription3">On medium and hard levels, gameplay is based on following the instructions above the input field. Always when you finish playing a level and exit to the menu, the number of tries made will be saved in the last results (marked with a cup icon).</string>
 
     <string name="horizontalGameDescription">The game is based on the task of guessing a number drawn by the computer, which is within the range given in the upper left corner of the screen.
 
 When playing on the easiest level, 3 lives are available. After using all the chances, an appropriate message will be displayed.
 
-On medium and hard levels, gameplay is based on following the instructions above the input field. When you finish playing a level and exit to the menu, the number of attempts made will be saved in the last results.</string>
+On medium and hard levels, gameplay is based on following the instructions above the input field. Always when you finish playing a level and exit to the menu, the number of tries made will be saved in the last results (marked with a cup icon).</string>
+
+    <string name="haveFunText">Have fun!</string>
 </resources>
