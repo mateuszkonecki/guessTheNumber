@@ -1,35 +1,33 @@
-package com.example.guessthenumber;
+package pl.mateuszkonecki.guessthenumber;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.DialogInterface;
-import android.content.Intent;
-import android.graphics.Color;
+import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
-import android.widget.Button;
-import android.widget.TextView;
-import android.widget.Toast;
 
-import com.example.guessthenumber.databinding.ActivityEasyGuessBinding;
+import com.example.guessthenumber.R;
+import com.example.guessthenumber.databinding.ActivityMediumGuessBinding;
 import com.google.android.material.dialog.MaterialAlertDialogBuilder;
-import com.google.android.material.snackbar.Snackbar;
-import com.google.android.material.textfield.TextInputEditText;
 
 import java.util.Random;
 
-public class EasyGuessActivity extends AppCompatActivity {
+public class MediumGuessActivity extends AppCompatActivity {
 
-    ActivityEasyGuessBinding binding;
-    int wylosowana;
+    private ActivityMediumGuessBinding binding;
     private Random random = new Random();
-    int counter = 0;
+
+    public static final String SHARED_PREF = "shared_pref";
+    public static final String SHARED_PREF_KEY = "mediumScore";
+
+    private int wylosowana;
+    private int tryCounter = 1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        binding = ActivityEasyGuessBinding.inflate(getLayoutInflater());
+        binding = ActivityMediumGuessBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
         playAgain();
@@ -45,8 +43,33 @@ public class EasyGuessActivity extends AppCompatActivity {
                     binding.numberET.setError(getResources().getString(R.string.incorrectFormat));
                 } else {
                     int userInputInt = Integer.parseInt(userInput);
+
+                    if(wylosowana > userInputInt) {
+                        tryCounter++;
+
+                        binding.lessOrGreat.setVisibility(View.VISIBLE);
+                        binding.randedNumber.setVisibility(View.VISIBLE);
+                        binding.userNumberTV.setVisibility(View.VISIBLE);
+
+                        binding.userNumberTV.setText(userInput);
+                        binding.lessOrGreat.setImageResource(R.drawable.ic_arrow_greater_24);
+                        binding.randedNumber.setText(R.string.myNumberTV);
+                        binding.numberET.setText("");
+                    }
+                    if(wylosowana < userInputInt) {
+                        tryCounter++;
+
+                        binding.lessOrGreat.setVisibility(View.VISIBLE);
+                        binding.randedNumber.setVisibility(View.VISIBLE);
+                        binding.userNumberTV.setVisibility(View.VISIBLE);
+
+                        binding.userNumberTV.setText(userInput);
+                        binding.lessOrGreat.setImageResource(R.drawable.ic__arrow_less_24);
+                        binding.randedNumber.setText(R.string.myNumberTV);
+                        binding.numberET.setText("");
+                    }
                     if(wylosowana == userInputInt) {
-                        new MaterialAlertDialogBuilder(EasyGuessActivity.this)
+                        new MaterialAlertDialogBuilder(MediumGuessActivity.this)
                                 .setTitle(getResources().getString(R.string.congratsTitle))
                                 .setMessage(getResources().getString(R.string.congratsMessage))
                                 .setCancelable(false)
@@ -60,40 +83,7 @@ public class EasyGuessActivity extends AppCompatActivity {
                                 .setNeutralButton(getResources().getString(R.string.congratsNeutral), new DialogInterface.OnClickListener() {
                                     @Override
                                     public void onClick(DialogInterface dialogInterface, int i) {
-                                        finish();
-                                        overridePendingTransition(R.anim.left_in, R.anim.right_out);
-                                    }
-                                })
-                                .show();
-                    }
-
-                    if(wylosowana != userInputInt) {
-                        counter++;
-                    }
-
-                    if(counter == 1) {
-                        binding.heartRight.setImageResource(R.drawable.ic_heart_broken_24);
-                        binding.numberET.setText("");
-                    } else if(counter == 2) {
-                        binding.heartMiddle.setImageResource(R.drawable.ic_heart_broken_24);
-                        binding.numberET.setText("");
-                    } else if(counter == 3) {
-                        binding.heartLeft.setImageResource(R.drawable.ic_heart_broken_24);
-                        binding.numberET.setText("");
-                        new MaterialAlertDialogBuilder(EasyGuessActivity.this)
-                                .setTitle(getResources().getString(R.string.loseTitle))
-                                .setMessage(getResources().getString(R.string.loseMessage))
-                                .setCancelable(false)
-                                .setBackground(getDrawable(R.drawable.material_background))
-                                .setPositiveButton(getResources().getString(R.string.losePositive), new DialogInterface.OnClickListener() {
-                                    @Override
-                                    public void onClick(DialogInterface dialogInterface, int i) {
-                                        playAgain();
-                                    }
-                                })
-                                .setNeutralButton(getResources().getString(R.string.loseNegative), new DialogInterface.OnClickListener() {
-                                    @Override
-                                    public void onClick(DialogInterface dialogInterface, int i) {
+                                        saveData();
                                         finish();
                                         overridePendingTransition(R.anim.left_in, R.anim.right_out);
                                     }
@@ -106,21 +96,22 @@ public class EasyGuessActivity extends AppCompatActivity {
     }
 
     private void playAgain() {
-        counter = 0;
-        binding.heartLeft.setImageResource(R.drawable.ic_favorite_24);
-        binding.heartMiddle.setImageResource(R.drawable.ic_favorite_24);
-        binding.heartRight.setImageResource(R.drawable.ic_favorite_24);
-        wylosowana = random.nextInt(15)+1;
-        binding.numbersRange.setText("1 --> 15");
+        tryCounter = 1;
+        binding.lessOrGreat.setVisibility(View.INVISIBLE);
+        binding.randedNumber.setVisibility(View.INVISIBLE);
+        binding.userNumberTV.setVisibility(View.INVISIBLE);
+        wylosowana = random.nextInt(75)+1;
+        binding.numbersRange.setText("1 --> 75");
         binding.numberET.setText("");
     }
 
     @Override
     public void onBackPressed() {
-        new MaterialAlertDialogBuilder(EasyGuessActivity.this)
+        new MaterialAlertDialogBuilder(MediumGuessActivity.this)
                 .setTitle(getResources().getString(R.string.exitTitle))
                 .setMessage(getResources().getString(R.string.exitMessage))
-                .setCancelable(false).setIcon(getDrawable(R.drawable.ic_warning_24))
+                .setCancelable(false)
+                .setIcon(getDrawable(R.drawable.ic_warning_24))
                 .setBackground(getDrawable(R.drawable.material_background))
                 .setPositiveButton(getResources().getString(R.string.exitPositive), new DialogInterface.OnClickListener() {
                     @Override
@@ -136,5 +127,12 @@ public class EasyGuessActivity extends AppCompatActivity {
                     }
                 })
                 .show();
+    }
+
+    private void saveData() {
+        SharedPreferences sharedPreferences = getSharedPreferences(SHARED_PREF, MODE_PRIVATE);
+        SharedPreferences.Editor editor = sharedPreferences.edit();
+        editor.putString(SHARED_PREF_KEY, String.valueOf(tryCounter));
+        editor.apply();
     }
 }

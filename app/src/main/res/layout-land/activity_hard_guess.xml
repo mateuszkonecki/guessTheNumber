@@ -146,7 +146,7 @@
             android:layout_height="wrap_content"
             android:hint="@string/EtHint"
             android:inputType="numberSigned"
-            android:maxLength="3" />
+            android:maxLength="4" />
 
         <Button
             android:id="@+id/checkNumberBtn"

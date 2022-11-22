@@ -1,18 +1,16 @@
-package com.example.guessthenumber;
+package pl.mateuszkonecki.guessthenumber;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.DialogInterface;
 import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.os.Handler;
 import android.view.View;
 
+import com.example.guessthenumber.R;
 import com.example.guessthenumber.databinding.ActivityHardGuessBinding;
 import com.google.android.material.dialog.MaterialAlertDialogBuilder;
 
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Random;
 
 public class HardGuessActivity extends AppCompatActivity {

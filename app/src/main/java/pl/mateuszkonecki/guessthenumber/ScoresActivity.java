@@ -1,10 +1,11 @@
-package com.example.guessthenumber;
+package pl.mateuszkonecki.guessthenumber;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.SharedPreferences;
 import android.os.Bundle;
 
+import com.example.guessthenumber.R;
 import com.example.guessthenumber.databinding.ActivityScoresBinding;
 
 public class ScoresActivity extends AppCompatActivity {

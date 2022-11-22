@@ -14,30 +14,30 @@
         android:theme="@style/Theme.GuessTheNumber"
         tools:targetApi="31">
         <activity
-            android:name=".ScoresActivity"
+            android:name="pl.mateuszkonecki.guessthenumber.ScoresActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".GameInfoActivity"
+            android:name="pl.mateuszkonecki.guessthenumber.GameInfoActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".HardGuessActivity"
+            android:name="pl.mateuszkonecki.guessthenumber.HardGuessActivity"
             android:exported="false" />
         <activity
-            android:name=".MediumGuessActivity"
+            android:name="pl.mateuszkonecki.guessthenumber.MediumGuessActivity"
             android:exported="false" />
         <activity
-            android:name=".EasyGuessActivity"
+            android:name="pl.mateuszkonecki.guessthenumber.EasyGuessActivity"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name="pl.mateuszkonecki.guessthenumber.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

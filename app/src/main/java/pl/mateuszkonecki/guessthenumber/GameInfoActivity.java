@@ -1,8 +1,10 @@
-package com.example.guessthenumber;
+package pl.mateuszkonecki.guessthenumber;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
+import com.example.guessthenumber.R;
 
 public class GameInfoActivity extends AppCompatActivity {
 

@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/launch_background"
-    tools:context=".GameInfoActivity">
+    tools:context="pl.mateuszkonecki.guessthenumber.GameInfoActivity">
 
     <TextView
         android:id="@+id/textView"

@@ -1,4 +1,4 @@
-package com.example.guessthenumber;
+package pl.mateuszkonecki.guessthenumber;
 
 import android.content.Context;
 
