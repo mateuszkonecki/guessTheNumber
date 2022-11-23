@@ -49,12 +49,15 @@
     <string name="gameDescription1">Gra opiera się na zadaniu odgadnięcia liczby wylosowanej przez komputer, która znajduje się w zakresie podanym w lewym górnym rogu ekranu.</string>
     <string name="gameDescription2">Podczas rozgrywki na najłatwiejszym poziomie, dostępne są 3 życia. Po wykorzystaniu wszystkich szans, zostanie wyświetlony odpowiedni komunikat. Na tym poziomie nie są zapisywane ilości podjętych prób.</string>
     <string name="gameDescription3">Na poziomach średnim i trudnym rozgrywka jest oparta na stosowaniu się do wskazówek wyświetlanych nad polem wprowadzania. Po każdym zakończeniu gry na danym poziomie i wyjściu do menu, w ostatnich wynikach (oznaczonych ikoną pucharu) zostanie zapisana liczba podjętych prób.</string>
+    <string name="gameDescription4">Aby opuścić daną aktywność, wystarczy nacisnąć systemowy przycisk "Wstecz".</string>
 
     <string name="horizontalGameDescription">Gra opiera się na zadaniu odgadnięcia liczby wylosowanej przez komputer, która znajduje się w zakresie podanym w lewym górnym rogu ekranu.
 
 Podczas rozgrywki na najłatwiejszym poziomie, dostępne są 3 życia. Po wykorzystaniu wszystkich szans, zostanie wyświetlony odpowiedni komunikat. Na tym poziomie nie są zapisywane ilości podjętych prób.
 
-Na poziomach średnim i trudnym rozgrywka jest oparta na stosowaniu się do wskazówek wyświetlanych nad polem wprowadzania. Po każdym zakończeniu gry na danym poziomie i wyjściu do menu, w ostatnich wynikach (oznaczonych ikoną pucharu) zostanie zapisana liczba podjętych prób.</string>
+Na poziomach średnim i trudnym rozgrywka jest oparta na stosowaniu się do wskazówek wyświetlanych nad polem wprowadzania. Po każdym zakończeniu gry na danym poziomie i wyjściu do menu, w ostatnich wynikach (oznaczonych ikoną pucharu) zostanie zapisana liczba podjętych prób.
+
+Aby opuścić daną aktywność, wystarczy nacisnąć systemowy przycisk "Wstecz".</string>
 
     <string name="haveFunText">Baw się dobrze!</string>
 </resources>
